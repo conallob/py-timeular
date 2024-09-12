@@ -1,0 +1,43 @@
+interactions:
+- request:
+    body: '{"apiKey": "fake_api_key", "apiSecret": "fake_api_secret"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '58'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.3
+    method: POST
+    uri: https://api.timeular.com/api/v4/developer/sign-in
+  response:
+    body:
+      string: '{"message":"You provided invalid apiKey/apiSecret pair","error":{"message":"You
+        provided invalid apiKey/apiSecret pair","code":"00200100004"}}'
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,Authorization,User-ID,Do-Not-Pass-To-Third-Party-Service,ClientID
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST,PUT,PATCH,DELETE
+      Allow:
+      - POST, OPTIONS
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '142'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 12 Sep 2024 13:52:18 GMT
+    status:
+      code: 401
+      message: Unauthorized
+version: 1
